@@ -1,3 +1,4 @@
+package No1;
 public class Cylinder extends Circle { // Save as "Cylinder.java"
     private double height; // private variable
 
@@ -27,6 +28,19 @@ public class Cylinder extends Circle { // Save as "Cylinder.java"
     // A public method for computing the volume of cylinder
     // use superclass method getArea() to get the base area
     public double getVolume() {
-        return getArea() * height;
+        // Menggunakan method getArea asli dari class circle
+        return super.getArea() * height;
+    }
+
+    // Override getArea method
+    @Override
+    public double getArea() {
+        return (2 * Math.PI * getRadius() * getHeight()) + (2 * super.getArea());
+    }
+    
+    @Override
+    public String toString() { 
+        return "Cylinder: subclass of " + super.toString() 
+            + " height=" + height;
     }
 }

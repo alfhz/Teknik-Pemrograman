@@ -1,3 +1,4 @@
+package No1;
 /**
  * The Circle class models a circle with a radius and color.
  */
@@ -27,15 +28,6 @@ public class Circle { // Save as "Circle.java"
     /** Returns the area of this Circle instance */
     public double getArea() {
         return radius * radius * Math.PI;
-    }
-
-    // Setter and getter for color
-    public String setColor(String color) {
-        this.color = color;
-        return color;
-    }
-    public String getColor() {
-        return color;
     }
 
     /** * Return a self-descriptive string of this instance in the form of
