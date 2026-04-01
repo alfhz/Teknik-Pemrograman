@@ -1,0 +1,5 @@
+# hanya .java dan .gitignore yang akan di track oleh git
+*
+!*/
+!*.java
+!.gitignore
